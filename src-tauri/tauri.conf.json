@@ -4,7 +4,7 @@
     "beforeBuildCommand": "",
     "beforeDevCommand": "",
     "devPath": "http://localhost:19006",
-    "distDir": "../build",
+    "distDir": "../web-build",
     "withGlobalTauri": true
   },
   "package": {
@@ -30,7 +30,7 @@
         "icons/icon.icns",
         "icons/icon.ico"
       ],
-      "identifier": "com.tauriexpo-av_test.dev",
+      "identifier": "com.tauriexpo-avtest.dev",
       "longDescription": "",
       "macOS": {
         "entitlements": null,

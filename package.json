@@ -6,7 +6,7 @@
     "start": "expo start",
     "web": "expo start --web",
     "desktop": "tauri dev",
-    "build-web": "expo build:web",
+    "build-web": "npx expo export:web",
     "build-desktop": "tauri build",
     "tauri": "tauri",
     "android": "expo start --android",
