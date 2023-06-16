@@ -116,3 +116,15 @@ const styles = StyleSheet.create({
 
 export default SoundPlayer;
 ```
+
+### run dev project
+
+```npm run web``` &  ```npm run desktop``` in 2 differents terminal
+
+### build project (here error to play sound)
+
+```npm run build-web```
+
+&
+
+```npm run build-desktop```
