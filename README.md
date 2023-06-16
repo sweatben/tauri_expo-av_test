@@ -1,9 +1,11 @@
 # tauri_expo-av_test
-in this project, the music is played in dev mode, but not once the project has been built.
+in this project, we play music with external Url.
 
 ## repo for reproduction.
 
 ticket [#7225](https://github.com/tauri-apps/tauri/issues/7225).
+
+you don't need to fix installation error with ```npm audit fix```. if you run this command project don't work !
 
 ## from scratch
 ### create expo app :
@@ -121,7 +123,7 @@ export default SoundPlayer;
 
 ```npm run web``` &  ```npm run desktop``` in 2 differents terminal
 
-### build project (here error to play sound)
+### build project
 
 ```npm run build-web```
 
