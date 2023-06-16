@@ -48,7 +48,7 @@ and change in ```package.json``` script for :
 ```
 change ```App.js``` for add :
 
-```
+```javascript
 import * as React from 'react';
 import { Text, View, StyleSheet, Button } from 'react-native';
 import { Audio } from 'expo-av';
