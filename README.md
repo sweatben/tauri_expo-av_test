@@ -1,10 +1,11 @@
 # tauri_expo-av_test
 in this project, the music is played in dev mode, but not once the project has been built.
 
-repo for reproduction.
+## repo for reproduction.
 
 ticket [#7225](https://github.com/tauri-apps/tauri/issues/7225).
 
+## from scratch
 create expo app :
 ```npx create-expo-app tauri_expo-av_test```
 
@@ -17,18 +18,20 @@ Install dependencies:
 
 Install Tauri : follow this setup  https://tauri.app/v1/guides/getting-started/setup/integrate
 
-in addition : 
+### in addition : 
 
 change in ```tauri.config.json``` beforeBuildCommand and beforeDevCommand by empty string:
 
  ``` "build": {
     "beforeBuildCommand": "",
-    "beforeDevCommand": ""
- },```
+    "beforeDevCommand": "",
+ },
+ ```
 
-change in ```package.json``` script for :
+and change in ```package.json``` script for :
  
-``` "scripts": {
+```
+"scripts": {
     "start": "expo start",
     "web": "expo start --web",
     "desktop": "tauri dev",
@@ -36,5 +39,6 @@ change in ```package.json``` script for :
     "build-desktop": "tauri build",
     "tauri": "tauri",
     "android": "expo start --android",
-    "ios": "expo start --ios"
-  },```
+    "ios": "expo start --ios",
+  },
+```
