@@ -33,15 +33,22 @@ change in ```tauri.config.json``` beforeBuildCommand and beforeDevCommand by emp
     "beforeDevCommand": "",
  },
  ```
+change in ```tauri.config.json``` distDir for :
+```
+   "build": {
+    "distDir": "../web-build",
+   }
+```
 
-and change in ```package.json``` script for :
+
+change in ```package.json``` script for :
  
 ```
 "scripts": {
     "start": "expo start",
     "web": "expo start --web",
     "desktop": "tauri dev",
-    "build-web": "expo build:web",
+    "build-web": "npx expo export:web",
     "build-desktop": "tauri build",
     "tauri": "tauri",
     "android": "expo start --android",
